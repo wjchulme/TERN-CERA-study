@@ -1,0 +1,237 @@
+R,redcap,name,full
+ptid,participant_id,Participant ID,Participant ID
+redcapid,redcap_survey_identifier,Survey Identifier,Survey Identifier
+timestamp_s2,cera_survey_2_timestamp,Survey Timestamp,Survey Timestamp
+consent_s2,consent_2,I consent to taking part in CERA survey 2.,I consent to taking part in CERA survey 2.
+ethnicity_s2,ethnicity,Ethnicity ,What is your ethnicity?
+ghq_conc_s2,ghq_1,Concentration,Been able to concentrate on whatever you're doing?
+ghq_sleep_s2,ghq_2,Losing Sleep,Lost much sleep over worry?
+ghq_use_s2,ghq_3,Playing a useful part,Felt that you are playing a useful part in things?
+ghq_capable_s2,ghq_4,Capable of making decisions,Felt capable of making decisions about things?
+ghq_strain_s2,ghq_5,Under strain,Felt constantly under strain?
+ghq_diffs_s2,ghq_6,Overcoming difficulties ,Felt you couldn't overcome your difficulties?
+ghq_day_s2,ghq_7,Enjoying day to day activities ,Been able to enjoy your normal day-to-day activities?
+ghq_face_s2,ghq_8,Facing up to problems,Been able to face up to your problems?
+ghq_depressed_s2,ghq_9,Feeling unhappy or depressed,Been feeling unhappy and depressed?
+ghq_loseconf_s2,ghq_10,Losing confidence in yourself,Been losing confidence in yourself?
+ghq_worthless_s2,ghq_11,Thinking of yourself as a worthless person,Been thinking of yourself as a worthless person?
+ghq_happy_s2,ghq_12,"Feeling happy, all things considered","Been feeling reasonably happy, all things considered?"
+iesr_reminder_s2,any_reminder_brought_back,Any reminder brought back feelings about it,Any reminder brought back feelings about it
+iesr_staysleep_s2,i_had_trouble_staying_asle,I had trouble staying asleep,I had trouble staying asleep
+iesr_things_s2,other_things_kept_me_think,Other things kept me thinking about it,Other things kept me thinking about it
+iesr_angry_s2,i_felt_irritable_and_angry,I felt irritable and angry,I felt irritable and angry
+iesr_avoid_s2,i_avoided_letting_myself_g,I avoided letting myself get upset when I thought about it or was reminded of it,I avoided letting myself get upset when I thought about it or was reminded of it
+iesr_thought_s2,i_thought_about_it_when_i,I thought about it when I didn't mean to,I thought about it when I didn't mean to
+iesr_real_s2,i_felt_as_if_it_hadn_t_hap,I felt as if it hadn't happened or wasn't real,I felt as if it hadn't happened or wasn't real
+iesr_away_s2,i_stayed_away_from_reminde,I stayed away from reminders of it,I stayed away from reminders of it
+iesr_pics_s2,pictures_about_it_popped_i,Pictures about it popped into my head,Pictures about it popped into my head
+iesr_jumpy_s2,i_was_jumpy_and_easily_sta,I was jumpy and easily startled,I was jumpy and easily startled
+iesr_notthink_s2,i_tried_not_to_think_about,I tried not to think about it,I tried not to think about it
+iesr_aware_s2,i_was_aware_that_i_still_h,"I was aware that I still had a lot of feelings about it, but I didn't deal with them","I was aware that I still had a lot of feelings about it, but I didn't deal with them"
+iesr_numb_s2,my_feelings_about_it_were,My feelings about it were kind of numb,My feelings about it were kind of numb
+iesr_acting_s2,i_found_myself_acting_or_f,I found myself acting or feeling like I was back at that time,I found myself acting or feeling like I was back at that time
+iesr_fallsleep_s2,i_had_trouble_falling_asle,I had trouble falling asleep,I had trouble falling asleep
+iesr_waves_s2,i_had_waves_of_strong_feel,I had waves of strong feelings about it,I had waves of strong feelings about it
+iesr_remove_s2,i_tried_to_remove_it_from,I tried to remove it from my memory,I tried to remove it from my memory
+iesr_conc_s2,i_had_trouble_concentratin,I had trouble concentrating,I had trouble concentrating
+iesr_reactions_s2,reminders_of_it_caused_me,"Reminders of it caused me to have physical reactions, such as sweating, trouble breathing, nausea or a pounding heart","Reminders of it caused me to have physical reactions, such as sweating, trouble breathing, nausea or a pounding heart"
+iesr_dreams_s2,i_had_dreams_about_it,I had dreams about it,I had dreams about it
+iesr_watchful_s2,i_felt_watchful_and_on_gua,I felt watchful and on-guard,I felt watchful and on-guard
+iesr_nottalk_s2,i_tried_not_to_talk_about,I tried not to talk about it,I tried not to talk about it
+ppe.dondof_none_s2,donning_and_doffing2___1,none,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=No training)"
+ppe.dondof_vid_s2,donning_and_doffing2___2,video,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Formal instructional video)"
+ppe.dondof_written_s2,donning_and_doffing2___3,written,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Written instruction)"
+ppe.dondof_sim_s2,donning_and_doffing2___4,simulations,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Simulation training)"
+ppe.dondof_dept_s2,donning_and_doffing2___5,deptartmental guidance,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Departmental guidance)"
+ppe.dondof_other_s2,donning_and_doffing2___6,other,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Other)"
+ppe.fit_none_s2,formal_fit_testing2___1,none,Formal fit testing for mask (choice=No training)
+ppe.fit_vid_s2,formal_fit_testing2___2,video,Formal fit testing for mask (choice=Formal instructional video)
+ppe.fit_written_s2,formal_fit_testing2___3,written,Formal fit testing for mask (choice=Written instruction)
+ppe.fit_sim_s2,formal_fit_testing2___4,simulations,Formal fit testing for mask (choice=Simulation training)
+ppe.fit_dept_s2,formal_fit_testing2___5,deptartmental guidance,Formal fit testing for mask (choice=Departmental guidance)
+ppe.fit_other_s2,formal_fit_testing2___6,other,Formal fit testing for mask (choice=Other)
+ppe.exp_none_s2,ppe_training_for_exposure2___1,none,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=No training)
+ppe.exp_vid_s2,ppe_training_for_exposure2___2,video,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Formal instructional video)
+ppe.exp_written_s2,ppe_training_for_exposure2___3,written,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Written instruction)
+ppe.exp_sim_s2,ppe_training_for_exposure2___4,simulations,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Simulation training)
+ppe.exp_dept_s2,ppe_training_for_exposure2___5,deptartmental guidance,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Departmental guidance)
+ppe.exp_other_s2,ppe_training_for_exposure2___6,other,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Other)
+practicaled_none_s2,ppe_22___0,none,What practical education have you received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19? (select all that apply) (choice=None)
+practicaled_case_s2,ppe_22___1,Simulation training of a possible case,What practical education have you received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19? (select all that apply) (choice=Simulation training of a possible case)
+practicaled_aerosol_s2,ppe_22___2,Simulation training of a case requiring aerosol procedure,What practical education have you received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19? (select all that apply) (choice=Simulation training of a case requiring aerosol generating procedure)
+practicaled_other_s2,ppe_22___3,Other,What practical education have you received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19? (select all that apply) (choice=Other)
+ft_practicaled_s2,other_please_specify3,,"You have selected other, please specify."
+confident_infectiontraining_s2,infec_train2,Confidence in infection control training,How confident do you feel in the infection control training that has been provided to you?  
+prepared_suspected_s2,recon_152,How prepared do you feel to provide direct care to suspected cases?,How prepared do you feel to provide direct care to suspected cases?
+prepared_normal_s2,recon_162,Care received by those not presenting with COVID-19 related symptoms ,How do you feel the care received by patients who are NOT presenting with either symptoms or a diagnosis of COVID-19 is?  
+redeployed_s2,have_you_been_deployed_to2,Re-deployment at peak,Have you been deployed to a different  clinical area as a result of the COVID-19 outbreak?
+redeployed_where_s2,re_deployed2,Re-deployment at peak- location,Where have you been redeployed to?
+ft_redeployed_s2,other_please_specify2,Re-deployment at peak location - other,"You have selected other, please specify."
+redeployed_satisfaction_s2,how_happy_are_you_with_2,Re-deployment at peak satisfaction ,How satisfied are you with this redeployment?    
+redeployed_satisfactionprev_s2,how_happy_are_you_with_3,"Satisfaction with redeployment during acceleration phase, at peak phase","In survey 1, you stated you had been re-deployed. How satisfied are you with this redeployment now?    "
+exposure_s2,how_many_suspected_cases_o2,Exposure to suspected COVID-19 cases,How many  suspected cases of COVID-19 have you had direct clinical contact with since March 1st 2020?
+exposure_confirmed_s2,how_many_suspected_cases_o_22,"Exposure to confirmed COVID-19 cases
+","As far as you are aware, how many of these suspected cases have turned out to be  confirmed  cases of COVID-19?"
+witness_death_s2,covid_19_death,How many patients have you witnessed dying with COVID-19?,How many patients have you witnessed dying with COVID-19?
+increasesympmedical_s2,do_you_consider_yourself_t2,Presence of a pre-existing physical health condition(s) that may increase of suffering more severe COVID-19 disease?,Do you have a pre-existing physical health condition(s) that may increase your chances of suffering more severe COVID-19 disease?
+increasesympmental_s2,ment_health2,Concern that exposure to COVID-19 will increase symptoms of an established mental health condition,Are you concerned that the exposure to the COVID-19 outbreak may increase symptoms of any established mental health conditions? 
+trauma_s2,trauma,Previous significant trauma,"Over the course of your life prior to the recent pandemic, have you experienced what you would characterise as a significant trauma?"
+death_risk_s2,risk_death,Feelings of high risk of dying/death,"During the COVID-19 pandemic, have you felt at high risk of dying/death?"
+perceived_risk_s2,perceived_risk2,Perceived risk to health due to clinical role,I feel that my personal health is at risk during the COVID-19 outbreak due to my clinical role?
+worry_personal_s2,risk2,Extent of worry about risks if personally infected with COVID-19,How worried are you about the potential risks if you were to become infected with COVID-19?
+worry_family_s2,worried2,Extent of worry about risks if family or loved ones infected with COVID-19 due to participants clinical role,"How worried are you about the potential risks to your family, loved ones or others due to your clinical role in the COVID-19 outbreak? "
+unwellfam_home_s2,unwell_fam___1,"Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? 1","Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell at home)"
+unwellfam_ward_s2,unwell_fam___2,"Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? 2","Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell and required ward level/HDU hospital treatment)"
+unwellfam_icu_s2,unwell_fam___3,"Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? 3","Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell and required ICU treatment)"
+unwellfam_died_s2,unwell_fam___4,"Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? 4","Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Died)"
+unwellfam_none_s2,unwell_fam___5,"Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? 5","Have any of your family, friends or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=None of the above)"
+unwellcol_home_s2,unwell_colleague___1,Have any of your colleagues become unwell or died due to COVID-19 or its complications? 1,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell at home)
+unwellcol_ward_s2,unwell_colleague___2,Have any of your colleagues become unwell or died due to COVID-19 or its complications? 2,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell and required ward level/HDU hospital treatment)
+unwellcol_icu_s2,unwell_colleague___3,Have any of your colleagues become unwell or died due to COVID-19 or its complications? 3,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell and required ICU treatment)
+unwellcol_died_s2,unwell_colleague___4,Have any of your colleagues become unwell or died due to COVID-19 or its complications? 4,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Died)
+unwellcol_none_s2,unwell_colleague___5,Have any of your colleagues become unwell or died due to COVID-19 or its complications? 5,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=None of the above)
+supportfam_s2,support_fam1,Feelings of support from family,In the last 2 weeks I have felt well supported by friends and family
+supportcol_s2,support_coll2,Feeling of support from colleagues,In the last 2 weeks I have felt well supported by the senior clinical leadership team
+coviddiag_s2,diagnosis,Personal Positive Coronavirus diagnosis,Have you received a positive diagnosis of Coronavirus during this pandemic?
+covidadmit_s2,hospital,Personal admission to hospital due to COVID-19,Have you been admitted to hospital due to your diagnosis of Coronavirus?
+selfisolate_s2,self_isolate_22,Self-isolation ,Have you had to self-isolate?
+selfisolatereason_symptomspersonal_s2,self_isolate2___1,personal symptoms,For what reason did you have to self-isolate? (select all that apply) (choice=Personal symptoms)
+selfisolatereason_diagnosispersonal_s2,self_isolate2___5,personal diagnosis,For what reason did you have to self-isolate? (select all that apply) (choice=Personal diagnosis of COVID-19)
+selfisolatereason_symptomshousehold_s2,self_isolate2___2,symptoms of a household member,For what reason did you have to self-isolate? (select all that apply) (choice=Symptoms of a member of the household)
+selfisolatereason_diagnosiswork_s2,self_isolate2___3,exposure at work,For what reason did you have to self-isolate? (select all that apply) (choice=Exposure to a positive case of COVID-19 in the work environment)
+selfisolatereason_diagnosisplay_s2,self_isolate2___4,exposure at home,For what reason did you have to self-isolate? (select all that apply) (choice=Exposure to a positive case of COVID-19 in your personal environment)
+selfisolatereason_other_s2,self_isolate2___6,other,For what reason did you have to self-isolate? (select all that apply) (choice=Other (eg return from travel to high risk area))
+missedshifts_s2,self_isolate_32,How many clinical shifts in your rota have you missed due to self-isolation?,How many clinical shifts in your rota have you missed due to self-isolation?
+psychint_therapist_s2,psych_inter___1,have you been offered psychological support? 1,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Structured individual therapy with a therapist (in person/on telephone))
+psychint_helpline_s2,psych_inter___2,have you been offered psychological support? 2,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Advice line / helpline)
+psychint_webint_s2,psych_inter___3,have you been offered psychological support? 3,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Internet based psychological intervention)
+psychint_app_s2,psych_inter___4,have you been offered psychological support? 4,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Well-being app / website)
+psychint_trim_s2,psych_inter___5,have you been offered psychological support? 5,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Brief TRiM / safe space session (trauma risk management))
+psychint_other_s2,psych_inter___6,have you been offered psychological support? 6,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Other please state)
+ft_psychint_s2,psych_other,have you been offered psychological support? 7,"Other, please specify"
+feelings_contribution_s2,work___1,Post trauma growth 1,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Feelings that you made a contribution)
+feelings_accomplish_s2,work___2,Post trauma growth 2,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=A sense of personal accomplishment)
+feelings_confidence_s2,work___3,Post trauma growth 3,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Improved confidence and self esteem)
+feelings_compassion_s2,work___4,Post trauma growth 4,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Increased compassion)
+feelings_purpose_s2,work___5,Post trauma growth 5,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Re-evaluation of self and purpose)
+feelings_satisfaction_s2,work___6,Post trauma growth 6,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Work satisfaction)
+feelings_cohesion_s2,work___7,Post trauma growth 7,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=A sense of team cohesion)
+contact_s2,contact,Further research ,Would you be happy to be contacted about any further COVID-19 related research focusing on the psychological impact on Doctors?
+complete_s2,cera_survey_2_complete,,Complete?
+consent_s3,consent_2_3,,I consent to taking part in CERA survey 2.
+ghq_conc_s3,ghq_1_3,,Been able to concentrate on whatever you're doing?
+ghq_sleep_s3,ghq_2_3,,Lost much sleep over worry?
+ghq_use_s3,ghq_3_3,,Felt that you are playing a useful part in things?
+ghq_capable_s3,ghq_4_3,,Felt capable of making decisions about things?
+ghq_strain_s3,ghq_5_3,,Felt constantly under strain?
+ghq_diffs_s3,ghq_6_3,,Felt you couldn't overcome your difficulties?
+ghq_day_s3,ghq_7_3,,Been able to enjoy your normal day-to-day activities?
+ghq_face_s3,ghq_8_3,,Been able to face up to your problems?
+ghq_depressed_s3,ghq_9_3,,Been feeling unhappy and depressed?
+ghq_loseconf_s3,ghq_10_3,,Been losing confidence in yourself?
+ghq_worthless_s3,ghq_11_3,,Been thinking of yourself as a worthless person?
+ghq_happy_s3,ghq_12_3,,"Been feeling reasonably happy, all things considered?"
+iesr_reminder_s3,any_reminder_brought_back_3,,Any reminder brought back feelings about it
+iesr_staysleep_s3,i_had_trouble_staying_asle_3,,I had trouble staying asleep
+iesr_things_s3,other_things_kept_me_think_3,,Other things kept me thinking about it
+iesr_angry_s3,i_felt_irritable_and_angry_3,,I felt irritable and angry
+iesr_avoid_s3,i_avoided_letting_myself_g_3,,I avoided letting myself get upset when I thought about it or was reminded of it
+iesr_thought_s3,i_thought_about_it_when_i_3,,I thought about it when I didn't mean to
+iesr_real_s3,i_felt_as_if_it_hadn_t_hap_3,,I felt as if it hadn't happened or wasn't real
+iesr_away_s3,i_stayed_away_from_reminde_3,,I stayed away from reminders of it
+iesr_pics_s3,pictures_about_it_popped_i_3,,Pictures about it popped into my head
+iesr_jumpy_s3,i_was_jumpy_and_easily_sta_3,,I was jumpy and easily startled
+iesr_notthink_s3,i_tried_not_to_think_about_3,,I tried not to think about it
+iesr_aware_s3,i_was_aware_that_i_still_h_3,,"I was aware that I still had a lot of feelings about it, but I didn't deal with them"
+iesr_numb_s3,my_feelings_about_it_were_3,,My feelings about it were kind of numb
+iesr_acting_s3,i_found_myself_acting_or_f_3,,I found myself acting or feeling like I was back at that time
+iesr_fallsleep_s3,i_had_trouble_falling_asle_3,,I had trouble falling asleep
+iesr_waves_s3,i_had_waves_of_strong_feel_3,,I had waves of strong feelings about it
+iesr_remove_s3,i_tried_to_remove_it_from_3,,I tried to remove it from my memory
+iesr_conc_s3,i_had_trouble_concentratin_3,,I had trouble concentrating
+iesr_reactions_s3,reminders_of_it_caused_me_3,,"Reminders of it caused me to have physical reactions, such as sweating, trouble breathing, nausea or a pounding heart"
+iesr_dreams_s3,i_had_dreams_about_it_3,,I had dreams about it
+iesr_watchful_s3,i_felt_watchful_and_on_gua_3,,I felt watchful and on-guard
+iesr_nottalk_s3,i_tried_not_to_talk_about_3,,I tried not to talk about it
+ethnicity_3,ethnicity_3,,What is your ethnicity?
+ppe.dondof_none_s3,donning_and_doffing2_3___1,,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=No training)"
+ppe.dondof_vid_s3,donning_and_doffing2_3___2,,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Formal instructional video)"
+ppe.dondof_written_s3,donning_and_doffing2_3___3,,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Written instruction)"
+ppe.dondof_sim_s3,donning_and_doffing2_3___4,,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Simulation training)"
+ppe.dondof_dept_s3,donning_and_doffing2_3___5,,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Departmental guidance)"
+ppe.dondof_other_s3,donning_and_doffing2_3___6,,"Donning and doffing (gloves, gown, facemask, eye protection) (choice=Other)"
+ppe.fit_none_s3,formal_fit_testing2_3___1,,Formal fit testing for mask (choice=No training)
+ppe.fit_vid_s3,formal_fit_testing2_3___2,,Formal fit testing for mask (choice=Formal instructional video)
+ppe.fit_written_s3,formal_fit_testing2_3___3,,Formal fit testing for mask (choice=Written instruction)
+ppe.fit_sim_s3,formal_fit_testing2_3___4,,Formal fit testing for mask (choice=Simulation training)
+ppe.fit_dept_s3,formal_fit_testing2_3___5,,Formal fit testing for mask (choice=Departmental guidance)
+ppe.fit_other_s3,formal_fit_testing2_3___6,,Formal fit testing for mask (choice=Other)
+ppe.exp_none_s3,ppe_training_for_exposure2_3___1,,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=No training)
+ppe.exp_vid_s3,ppe_training_for_exposure2_3___2,,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Formal instructional video)
+ppe.exp_written_s3,ppe_training_for_exposure2_3___3,,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Written instruction)
+ppe.exp_sim_s3,ppe_training_for_exposure2_3___4,,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Simulation training)
+ppe.exp_dept_s3,ppe_training_for_exposure2_3___5,,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Departmental guidance)
+ppe.exp_other_s3,ppe_training_for_exposure2_3___6,,PPE training for exposure to aerosol generating procedure (e.g. intubation) (choice=Other)
+practicaled_none_s3,ppe_22_3___0,,What practical education have you received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19? (select all that apply) (choice=None)
+practicaled_case_s3,ppe_22_3___1,,What practical education have you received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19? (select all that apply) (choice=Simulation training of a possible case)
+practicaled_aerosol_s3,ppe_22_3___2,,What practical education have you received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19? (select all that apply) (choice=Simulation training of a case requiring aerosol generating procedure)
+practicaled_other_s3,ppe_22_3___3,,What practical education have you received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19? (select all that apply) (choice=Other)
+ft_practicaled_s3,other_please_specify3_3,,"You have selected other, please specify."
+confident_infectiontraining_s3,infec_train2_3,,How confident do you feel in the infection control training that has been provided to you?  
+prepared_suspected_s3,recon_152_3,,How prepared do you feel to provide direct care to suspected cases?
+prepared_normal_s3,recon_162_3,,How do you feel the care received by patients who are NOT presenting with either symptoms or a diagnosis of COVID-19 is?  
+redeployed_s3,have_you_been_deployed_to2_3,,Have you been deployed to a different  clinical area as a result of the COVID-19 outbreak? ADD BRANCHING LOGIC
+redeployed_where_s3,re_deployed2_3,,Where have you been redeployed to?
+ft_redeployed_s3,other_please_specify2_3,,"You have selected other, please specify."
+redeployed_satisfaction_s3,how_happy_are_you_with_2_3,,How satisfied are you with this redeployment?    
+exposure_s3,how_many_suspected_cases_o2_3,,How many  suspected cases of COVID-19 have you had direct clinical contact with since March 1st 2020?
+exposure_confirmed_s3,how_many_suspected_cases_o_22_3,,"As far as you are aware, how many of these suspected cases have turned out to be  confirmed  cases of COVID-19?"
+witness_death_s3,covid_19_death_3,,How many patients have you witnessed dying with COVID-19?
+increasesympmedical_s3,do_you_consider_yourself_t2_3,,Do you have a pre-existing physical health condition(s) that may increase your chances of suffering more severe COVID-19 disease?
+perceived_risk_s3,perceived_risk2_3,,I feel that my personal health is at risk during the COVID-19 outbreak due to my clinical role?
+increasesympmental_s3,ment_health2_3,,Are you concerned that the exposure to the COVID-19 outbreak may increase symptoms of any established mental health conditions? 
+trauma_s3,trauma_3,,"Over the course of your life prior to the recent pandemic, have you experienced what you would characterise as a significant trauma?"
+worry_personal_s3,risk2_3,,How worried are you about the potential risks if you were to become infected with COVID-19?
+worry_family_s3,worried2_3,,"How worried are you about the potential risks to your family, loved ones or others due to your clinical role in the COVID-19 outbreak? "
+death_risk_s3,risk_death_3,,"During the COVID-19 pandemic, have you felt at high risk of dying/death?"
+unwellfam_home_s3,love_icu_3___1,,"Have any of your family, friends, or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell at home)"
+unwellfam_ward_s3,love_icu_3___2,,"Have any of your family, friends, or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell and required non-ICU hospital treatment)"
+unwellfam_icu_s3,love_icu_3___3,,"Have any of your family, friends, or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell and required ICU treatment)"
+unwellfam_died_s3,love_icu_3___4,,"Have any of your family, friends, or loved ones become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Died)"
+unwellcol_home_s3,colle_icu_3___1,,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell at home)
+unwellcol_ward_s3,colle_icu_3___2,,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell and required non-ICU hospital treatment)
+unwellcol_icu_s3,colle_icu_3___3,,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Unwell and required ICU treatment)
+unwellcol_died_s3,colle_icu_3___4,,Have any of your colleagues become unwell or died due to COVID-19 or its complications? (select all that apply) (choice=Died)
+supportfam_s3,support_fam_3,,In the last 2 weeks I have felt well supported by friends and family
+supportcol_s3,support_coll_3,,In the last 2 weeks I have felt well supported by the senior clinical leadership team   
+coviddiag_s3,diagnosis_3,,Have you received a positive diagnosis of Coronavirus during this pandemic?
+covidadmit_s3,hospital_3,,Have you been admitted to hospital due to your diagnosis of Coronavirus?
+selfisolate_s3,self_isolate_22_3,,Have you had to self-isolate?
+selfisolatereason_symptomspersonal_s3,self_isolate2_3___1,,For what reason did you have to self-isolate? (select all that apply) (choice=Personal symptoms)
+selfisolatereason_diagnosispersonal_s3,self_isolate2_3___5,,For what reason did you have to self-isolate? (select all that apply) (choice=Personal diagnosis of COVID-19)
+selfisolatereason_symptomshousehold_s3,self_isolate2_3___2,,For what reason did you have to self-isolate? (select all that apply) (choice=Symptoms of a member of the household)
+selfisolatereason_diagnosiswork_s3,self_isolate2_3___3,,For what reason did you have to self-isolate? (select all that apply) (choice=Exposure to a positive case of COVID-19 in the work environment)
+selfisolatereason_diagnosisplay_s3,self_isolate2_3___4,,For what reason did you have to self-isolate? (select all that apply) (choice=Exposure to a positive case of COVID-19 in your personal environment)
+selfisolatereason_other_s3,self_isolate2_3___6,,For what reason did you have to self-isolate? (select all that apply) (choice=Other (eg return from travel to high risk area))
+ft_selfisolatereason_s3,self_isolate_32_3,,How many clinical shifts in your rota have you missed due to self-isolation?
+psychint_therapist_s3,psych_inter_3___1,,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Structured individual therapy with a therapist (in person/on telephone))
+psychint_helpline_s3,psych_inter_3___2,,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Advice line / helpline)
+psychint_webint_s3,psych_inter_3___3,,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Internet based psychological intervention)
+psychint_app_s3,psych_inter_3___4,,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Well-being app / website)
+psychint_trim_s3,psych_inter_3___5,,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Brief TRiM / safe space session (trauma risk management))
+psychint_other_s3,psych_inter_3___6,,Have you been offered any of the following psychological interventions via your current place of work? (Select all that apply) (choice=Other please state)
+ft_psychint_s3,psych_other_3,,"Other, please specify"
+feelings_contribution_s3,work_3___1,,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Feelings that you made a contribution)
+feelings_accomplish_s3,work_3___2,,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=A sense of personal accomplishment)
+feelings_confidence_s3,work_3___3,,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Improved confidence and self esteem)
+feelings_compassion_s3,work_3___4,,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Increased compassion)
+feelings_purpose_s3,work_3___5,,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Re-evaluation of self and purpose)
+feelings_satisfaction_s3,work_3___6,,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=Work satisfaction)
+feelings_cohesion_s3,work_3___7,,During your time working in the COVID-19 pandemic have you experienced any of the following? (Select all that apply) (choice=A sense of team cohesion)
+positive_impact,contact_3,,Would you be happy to be contacted about any further COVID-19 related research focusing on the psychological impact on Doctors?
+complete_s3,cera_survey_3_complete,,Complete?
+email_s2,email,,email
+send_s2,send_survey_2,,Send survey 2?
+send_s3,send_survey_3,,Send survey 3?
+resend_s2,surv2,,re-send  survey 2
+complete_s4,office_use_complete,,Complete?
