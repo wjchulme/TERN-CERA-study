@@ -134,13 +134,13 @@ univariable_cat <- c(
   "increasesympmental", "trauma",
   "comb_unwellfam_max", "comb_unwellcol_max",
   "comb_covidpersonal",
-  "feelings_contribution",
-  "feelings_accomplish",
-  "feelings_confidence",
-  "feelings_compassion",
-  "feelings_purpose",
-  "feelings_satisfaction",
-  "feelings_cohesion",
+  #"feelings_contribution",
+  #"feelings_accomplish",
+  #"feelings_confidence",
+  #"feelings_compassion",
+  #"feelings_purpose",
+  #"feelings_satisfaction",
+  #"feelings_cohesion",
   NULL
 )
 
@@ -216,9 +216,6 @@ models <-
 
   )
 
-
-models <- models %>% select(-dat)
-
 models_pval <- models %>% select(name, vartype, n, n_missing, pct_missing, starts_with("pval"), starts_with("R2"))
 ## possibly quicker to re-run that compress and reload! so may delete
 write_rds(models, file=here::here("outputs", "IESR", "models_iesr_lmer.rds"), compress="gz")
@@ -293,6 +290,9 @@ write_rds(models_plots, file=here::here("outputs", "IESR", "models_plots.rds"), 
 #models_plots <- read_rds(file=here::here("outputs", "IESR", "models_plots.rds"))
 
 
+write_csv(models_pvals, file = here::here("outputs", "IESR", "models", "model_iesr_summary_stats.csv"))
+
+
 
 models %>%
   select(variables, summary_table) %>%
@@ -339,7 +339,7 @@ models_plots %>%
     width = 20,
     limitsize = FALSE,
     filename = str_c("jit_", variables, ".svg"),
-    path = here::here("figures","survey-123", "IESR", "descriptive"),
+    path = here::here("outputs", "IESR", "descriptive", "figures"),
   ) %>%
   select(-jitheight) %>%
   pwalk(ggsave)
@@ -353,7 +353,7 @@ models_plots %>%
     width=20, 
     limitsize=FALSE,
     filename = str_c("model1_", variables, ".svg"),
-    path = here::here("figures","survey-123","IESR", "model"),
+    path = here::here("outputs", "IESR", "models", "figures"),
   ) %>%
   select(-lineheight) %>%
   pwalk(ggsave)
@@ -367,7 +367,7 @@ models_plots %>%
     width=20, 
     limitsize=FALSE,
     filename = str_c("model2_", variables, ".svg"),
-    path = here::here("figures","survey-123","IESR", "model"),
+    path = here::here("outputs", "IESR", "models", "figures"),
   ) %>%
   select(-lineheight) %>%
   pwalk(ggsave)
@@ -425,5 +425,5 @@ ggsave(
   height =20, width=20, units = "cm",
   limitsize=FALSE,
   filename = "IES-R variance explained model 2.svg",
-  path = here::here("figures","survey-123","IESR", "model")
+  path = here::here("outputs", "IESR" "models"),
 )
