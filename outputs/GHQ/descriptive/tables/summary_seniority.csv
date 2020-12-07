@@ -1,0 +1,13 @@
+survey_chr,catvar_explicit_na,n,mean,min,Q10,Q25,Q50,Q75,Q90,max
+Survey 1,Junior Doctor,1063,13.621825023518344,1,8,10,13,16,20,35
+Survey 1,Middle Grade Doctor,641,14.13572542901716,2,8,11,13,17,21,35
+Survey 1,Other Senior Doctor,221,13.475113122171946,0,8,10,12,16,21,34
+Survey 1,Senior Doctor (Consultant Grade),1065,13.647887323943662,0,8,10,13,17,21,35
+Survey 2,Junior Doctor,1062,13.346516007532957,2,7,10,13,16,20,32
+Survey 2,Middle Grade Doctor,645,13.493023255813954,3,7,9,13,17,21,34
+Survey 2,Other Senior Doctor,221,13.167420814479637,5,7,9,12,16,22,36
+Survey 2,Senior Doctor (Consultant Grade),1049,12.816015252621545,0,6,9,12,16,20,35
+Survey 3,Junior Doctor,1062,12.871939736346516,0,7,9,12,16,20,34
+Survey 3,Middle Grade Doctor,624,13.133012820512821,2,7,9,12,16,21,36
+Survey 3,Other Senior Doctor,216,13.13888888888889,1,7,9,12,16,22,32
+Survey 3,Senior Doctor (Consultant Grade),1015,12.675862068965516,0,6,9,12,16,21,36

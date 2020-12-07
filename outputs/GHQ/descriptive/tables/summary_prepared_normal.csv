@@ -1,0 +1,19 @@
+survey_chr,catvar_explicit_na,n,mean,min,Q10,Q25,Q50,Q75,Q90,max
+Survey 1,Significantly worse than before Covid-19,356,15.598314606741573,5,9,11,15,19,23,35
+Survey 1,Slightly worse than before Covid-19,1146,14.290575916230367,2,8,11,14,17,21,35
+Survey 1,The same as before Covid-19,1205,12.854771784232366,0,7.400000000000006,10,12,16,19,33
+Survey 1,Slightly better than before Covid-19,201,12.348258706467663,2,7,9,12,15,19,31
+Survey 1,Significantly better than before Covid-19,29,12.206896551724139,0,5.800000000000001,9,12,16,18,24
+Survey 1,(Missing),53,15.056603773584905,4,9,11,14,19,22,30
+Survey 2,Significantly worse than before Covid-19,497,14.867203219315895,3,8,11,14,18,23,36
+Survey 2,Slightly worse than before Covid-19,1269,13.07880220646178,1,7,10,13,16,20,34
+Survey 2,The same as before Covid-19,722,12.858725761772853,2,7,9,12,16,20,35
+Survey 2,Slightly better than before Covid-19,348,12.03448275862069,2,6,8,11,15,18.30000000000001,30
+Survey 2,Significantly better than before Covid-19,83,11.216867469879517,0,5.200000000000001,8,11,14,18,27
+Survey 2,(Missing),58,14.517241379310345,4,7.7,10,14,18.75,23,32
+Survey 3,Significantly worse than before Covid-19,459,14.915032679738562,0,7,10,14,19,24,36
+Survey 3,Slightly worse than before Covid-19,1203,12.902743142144638,0,7,9,12,16,20.799999999999955,36
+Survey 3,The same as before Covid-19,811,12.167694204685573,0,6,9,12,15,19,31
+Survey 3,Slightly better than before Covid-19,303,11.834983498349835,1,6,8,11,14,18.80000000000001,32
+Survey 3,Significantly better than before Covid-19,57,10.421052631578947,0,5,7,11,14,16,20
+Survey 3,(Missing),84,13.726190476190476,4,8,10.75,12,17,21,26

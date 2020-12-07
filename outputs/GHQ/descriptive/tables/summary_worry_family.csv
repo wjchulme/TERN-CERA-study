@@ -1,0 +1,19 @@
+survey_chr,catvar_explicit_na,n,mean,min,Q10,Q25,Q50,Q75,Q90,max
+Survey 1,Extremely worried,1002,15.683632734530939,3,9,12,15,19,23,35
+Survey 1,Generally worried,1366,13.274524158125915,2,8,10,13,16,19,35
+Survey 1,Neither worried or not worried,255,11.501960784313725,2,7,9,11,14,17,34
+Survey 1,Generally not worried,271,11.118081180811808,0,6,8,11,13.5,18,26
+Survey 1,Not worried at all,48,11.3125,0,6.7,8,11.5,13.25,17,24
+Survey 1,(Missing),48,14.9375,4,8.7,10,14,18.25,22,30
+Survey 2,Extremely worried,780,15.776923076923078,2,9,12,15,19,24,36
+Survey 2,Generally worried,1349,12.77835433654559,2,7,9,12,16,19,32
+Survey 2,Neither worried or not worried,333,11.18918918918919,1,6,8,11,14,17,31
+Survey 2,Generally not worried,373,11.225201072386058,0,6,8,11,14,17.80000000000001,29
+Survey 2,Not worried at all,89,11.146067415730338,2,5.800000000000001,8,11,14,17,27
+Survey 2,(Missing),53,14.754716981132075,4,8,10,15,19,23,32
+Survey 3,Extremely worried,680,15.248529411764705,1,8,11,14,19,24,36
+Survey 3,Generally worried,1331,12.730277986476334,0,7,9,12,16,20,36
+Survey 3,Neither worried or not worried,366,11.519125683060109,0,6,8,11,14,18,31
+Survey 3,Generally not worried,358,10.569832402234637,2,6,8,10,13,16,32
+Survey 3,Not worried at all,87,11.367816091954023,3,5,6.5,10,14,19.400000000000006,34
+Survey 3,(Missing),95,13.336842105263157,4,8,10,12,16.5,21,29
