@@ -232,6 +232,7 @@ write_rds(models, file=here::here("outputs", "GHQ", "models_ghq_lmer.rds"), comp
 write_rds(models_pvals, file=here::here("outputs", "GHQ",  "models_ghq_lmer_pvaltable.rds"), compress="gz")
 
 
+
 # create plots ------------------------------------------------------------
 
 
@@ -295,6 +296,7 @@ write_rds(models_plots, file=here::here("outputs", "GHQ", "models_ghq_plots.rds"
 # Save tables --------------------------------------------------------------
 #models_plots <- read_rds(file=here::here("outputs", "GHQ", "models_plots.rds"))
 
+write_csv(models_pvals, file = here::here("outputs", "GHQ", "models", "model_ghq_summary_stats.csv"))
 
 
 models %>%
