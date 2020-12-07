@@ -1,0 +1,9 @@
+survey_chr,catvar_explicit_na,n,mean,min,Q10,Q25,Q50,Q75,Q90,max
+Survey 2,White British,1693,15.075014766686355,0,1,5,12,21,34,84
+Survey 2,Irish,165,16.472727272727273,0,1,6,14,24,37.599999999999994,54
+Survey 2,Ethnic minority (including white other),781,18.709346991037133,0,1,6,15,27,41,80
+Survey 2,(Missing),93,19.129032258064516,0,1,5,13,29,47.8,78
+Survey 3,White British,1703,11.826189078097475,0,0,2,8,17,30,80
+Survey 3,Irish,174,11.982758620689655,0,0,2,7,19,31,66
+Survey 3,Ethnic minority (including white other),759,16.247694334650856,0,0,3,11,24,42,74
+Survey 3,(Missing),101,14.475247524752476,0,0,2,11,21,35,62

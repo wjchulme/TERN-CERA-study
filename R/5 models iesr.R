@@ -176,7 +176,7 @@ models <-
     pct_missing = map_dbl(variables, ~mean(is.na(data_mod[.]))),
     dat = map(variables, ~data_mod[!is.na(data_mod[[.]]), ] ),
     
-    summary_table = map2(list(data_mod), variables, ~summary_table(.x, .y, "ghqsum0123")),
+    summary_table = map2(list(data_mod), variables, ~summary_table(.x, .y, "iesrsum0123")),
     
     mod.lm_0 = map(dat, ~lmerTest::lmer(data=.x, formula=as.formula("iesrsum0123 ~  (1| ptid)"))),
     mod.lm_s0 = map(dat, ~lmerTest::lmer(data=.x, formula=as.formula("iesrsum0123 ~ survey_chr + (1| ptid)"))),
@@ -216,7 +216,7 @@ models <-
 
   )
 
-models_pval <- models %>% select(name, vartype, n, n_missing, pct_missing, starts_with("pval"), starts_with("R2"))
+models_pvals <- models %>% select(name, vartype, n, n_missing, pct_missing, starts_with("pval"), starts_with("R2"))
 ## possibly quicker to re-run that compress and reload! so may delete
 write_rds(models, file=here::here("outputs", "IESR", "models_iesr_lmer.rds"), compress="gz")
 write_rds(models_pval, file=here::here("outputs", "IESR",  "models_iesr_lmer_pvaltable.rds"), compress="gz")
@@ -397,7 +397,7 @@ plot_varexplained <- models %>%
     #caption = 
     #  expression("Nagakawa's "~R^2~"(marginal): the proportion of outcome variation explained by model 0 (black dot), 1 (blue dot), and 2 (orange dot).")
   )+
-  scale_x_continuous(limits=c(0,NA), expand=expand_scale(mult=c(0,.1)))+
+  scale_x_continuous(limits=c(0,NA), expand=expansion(mult=c(0,.1)))+
   theme_bw()+
   theme(
     plot.subtitle = element_text(hjust = 0.5),
@@ -425,5 +425,5 @@ ggsave(
   height =20, width=20, units = "cm",
   limitsize=FALSE,
   filename = "IES-R variance explained model 2.svg",
-  path = here::here("outputs", "IESR" "models"),
+  path = here::here("outputs", "IESR", "models"),
 )

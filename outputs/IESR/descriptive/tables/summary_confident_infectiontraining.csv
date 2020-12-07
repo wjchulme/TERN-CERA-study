@@ -1,0 +1,13 @@
+survey_chr,catvar_explicit_na,n,mean,min,Q10,Q25,Q50,Q75,Q90,max
+Survey 2,Not confident at all,112,28.5,0,7.100000000000001,12,25,39.5,57,84
+Survey 2,Somewhat not confident,344,19.40988372093023,0,2,7,16,28,41,73
+Survey 2,Neither not confident or confident,375,17.130666666666666,0,1,5,14,24.5,38,62
+Survey 2,Somewhat confident,1403,15.419101924447613,0,1,5,12,22.5,34,77
+Survey 2,Very confident,476,13.369747899159664,0,0.5,4,9,19,30,79
+Survey 2,(Missing),22,15.5,0,2,5.5,14.5,20.75,36.10000000000002,43
+Survey 3,Not confident at all,103,27.04854368932039,0,5,11,24,39,56,75
+Survey 3,Somewhat not confident,346,14.93063583815029,0,0,3,11,22.75,34,74
+Survey 3,Neither not confident or confident,433,14.418013856812934,0,0,2,10,22,36,76
+Survey 3,Somewhat confident,1322,12.341149773071104,0,0,2,8,18,32,72
+Survey 3,Very confident,520,10.167307692307693,0,0,1,6,15,27,80
+Survey 3,(Missing),13,17.076923076923077,0,1.4000000000000004,4,8,26,41,47

@@ -1,0 +1,12 @@
+survey_chr,catvar_explicit_na,n,mean,min,Q10,Q25,Q50,Q75,Q90,max
+Survey 2,No,299,13.331103678929766,0,0,3,10,19.5,30,71
+Survey 2,"Yes, unwell at home",1318,14.823216995447648,0,1,5,11,21,34,77
+Survey 2,"Yes, unwell and required hospital",495,17.983838383838386,0,1,5,15,26,40,79
+Survey 2,"Yes, unwell and required ICU",262,19.14503816793893,0,2,6,15,28,41,79
+Survey 2,"Yes, died",336,20.288690476190474,0,2,8,16.5,27,45,84
+Survey 2,(Missing),22,16.954545454545453,0,0.20000000000000018,5,12.5,24.5,38.30000000000001,61
+Survey 3,No,303,11.003300330033003,0,0,1,7,17,27,70
+Survey 3,"Yes, unwell at home",1192,11.524328859060402,0,0,2,7,17,30,80
+Survey 3,"Yes, unwell and required hospital",533,13.99624765478424,0,0,3,10,20,34,74
+Survey 3,"Yes, unwell and required ICU",361,15.0803324099723,0,1,4,11,22,36,76
+Survey 3,"Yes, died",348,17.367816091954023,0,0,3,12,26,42,74
