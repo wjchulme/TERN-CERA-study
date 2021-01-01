@@ -63,28 +63,6 @@ fct_case_when <- function(...) {
 }
 
 
-Qdata <- function(data, groupvar, contvar){
-  
-  data %>%
-    group_by({{groupvar}}) %>%
-    summarise(
-      n=n(),
-      n_valid=sum(!is.na({{contvar}})),
-      pct_valid = n_valid/n,
-      Q10=quantile({{contvar}}, 0.1, na.rm=TRUE),
-      Q25=quantile({{contvar}}, 0.25, na.rm=TRUE),
-      Q50=quantile({{contvar}}, 0.5, na.rm=TRUE),
-      Q75=quantile({{contvar}}, 0.75, na.rm=TRUE),
-      Q90=quantile({{contvar}}, 0.9, na.rm=TRUE),
-      mean=mean({{contvar}}, na.rm=TRUE),
-      bsci = list(Hmisc::smean.cl.boot({{contvar}}, conf.int=0.95, B=1000, reps=FALSE)),
-      mean.ll = map_dbl(bsci, ~.[2]),
-      mean.ul = map_dbl(bsci, ~.[3])
-    ) %>% 
-    select(-bsci) %>%
-    ungroup() 
-}
-
 
 # function to extract total plot height minus panel height
 plotHeight <- function(plot, unit){
