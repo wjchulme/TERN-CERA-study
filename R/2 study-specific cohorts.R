@@ -26,11 +26,7 @@ data_s1 <- data_distinctemails %>%
     compl_hospgradedept==1,
     #complete1=="Complete"
   ) %>% 
-  select(c(-ends_with("_s2"), -ends_with("_s3")), consent_s1, consent_s2, consent_s3) %>%
-  rename_at(
-    .vars = vars(ends_with("_s1"), -consent_s1),
-    .funs = ~str_remove(., "\\_s1$")
-  ) 
+  select(c(-ends_with("_s2"), -ends_with("_s3")), consent_s1, consent_s2, consent_s3)
 
 # all survey data for all those consenting to at least survey 1, regardless of drop-out status, with complete hospital/grade/dept info
 data_sany <- data_distinctemails %>%
