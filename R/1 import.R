@@ -887,6 +887,17 @@ write_rds(x=data2, file=here::here("processed-data", "data_all.rds"))
 
 factor_dct <- factor_dct0 %>%
   add_row(
+    R="region",
+    name = "Region",
+    full="Region",
+    vartype="professional",
+    code=NULL,
+    level=list(c("East Midlands", "East of England", "London", "North East", "North West", 
+                 "South East", "South West", "West Midlands", "Yorkshire and the Humber",
+                 "Northern Ireland", "Scotland", "Wales", "Dublin", "Rest of Ireland")),
+    short=NULL
+  ) %>%
+  add_row(
     R="age2",
     name = "Age",
     full=dictionary %>% filter(R=="age") %>% pull(full),
@@ -938,6 +949,25 @@ factor_dct <- factor_dct0 %>%
     vartype="professional",
     code=NULL,
     level=list(c("ED", "anaes", "ICU", "AMU", "anaes+ICU", "Other")),
+    short=NULL
+  ) %>%
+  add_row(
+    R="comb_dept3",
+    name = "Department",
+    full="Department",
+    plottype="bar",
+    vartype="professional",
+    code=NULL,
+    level=list(c("anaes", "anaes+ICU", "ED", "ED+anaes", "ICU", "ED+ICU", "ED+anaes+ICU")),
+    short=NULL
+  ) %>%
+  add_row(
+    R="seniority",
+    name = "Seniority",
+    full="Seniority",
+    vartype="professional",
+    code=NULL,
+    level=list(c("Junior Doctor","Middle Grade Doctor","Other Senior Doctor", "Senior Doctor (Consultant Grade)")),
     short=NULL
   ) %>%
   # add_row(
@@ -1073,7 +1103,7 @@ factor_dct <- factor_dct0 %>%
     )
   ) %>%
   add_row(
-    R="redeployed_where2",
+    R=c("redeployed_where2_s1", "redeployed_where2_s2"),
     name="Redeployment",
     full="Have you been redeployed due to Covid-19 and if so where",
     vartype="professional",
@@ -1081,26 +1111,6 @@ factor_dct <- factor_dct0 %>%
     level=dictionary %>% filter(R=="dept") %>% pull(level),
     short=list(c("ed", "anaes", "icu", "amu", "ward", "other"))
   )  %>%
-  add_row(
-    R="region",
-    name = "Region",
-    full="Region",
-    vartype="professional",
-    code=NULL,
-    level=list(c("East Midlands", "East of England", "London", "North East", "North West", 
-                 "South East", "South West", "West Midlands", "Yorkshire and the Humber",
-                 "Northern Ireland", "Scotland", "Wales", "Dublin", "Rest of Ireland")),
-    short=NULL
-  ) %>%
-  add_row(
-    R="seniority",
-    name = "Seniority",
-    full="Seniority",
-    vartype="professional",
-    code=NULL,
-    level=list(c("Junior Doctor","Middle Grade Doctor","Other Senior Doctor", "Senior Doctor (Consultant Grade)")),
-    short=NULL
-  ) %>%
   add_row(
     R="comb_outbreak_any",
     name = "Any previous outbreak experience",
@@ -1111,7 +1121,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_ppe.dondof_any",
+    R="comb_ppe.dondof_any_s1",
     name = "Any training for PPE donning and doffing",
     full="Any training for PPE donning and doffing",
     vartype="professional",
@@ -1120,7 +1130,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_ppe.fit_any",
+    R="comb_ppe.fit_any_s1",
     name = "Any training for fit testing for mask",
     full="Any training for fit testing for mask",
     vartype="professional",
@@ -1129,7 +1139,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_ppe.exp_any",
+    R="comb_ppe.exp_any_s1",
     name="Any training for exposure to aerosol generating procedure",
     full="Any training for exposure to aerosol generating procedure",
     vartype="professional",
@@ -1138,7 +1148,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_practicaled_any",
+    R="comb_practicaled_any_s1",
     name = "Practical education for COVID-19 care",
     full="Any practical education received in regards to the clinical care of patients presenting with suspected/diagnosed COVID-19?",
     vartype="professional",
@@ -1147,7 +1157,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="exposure_confirmed2",
+    R=c("exposure_confirmed2_s1", "exposure_confirmed2_s2", "exposure_confirmed2_s3"),
     name = "Exposure to confirmed case",
     full=dictionary %>% filter(R=="exposure_confirmed_s1") %>% pull(full),
     vartype="professional",
@@ -1156,7 +1166,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_unwellfam_any",
+    R=c("comb_unwellfam_any_s2", "comb_unwellfam_any_s3"),
     name="Any family members unwell due to COVID-19",
     full="Any family members unwell due to COVID-19",
     vartype="personal",
@@ -1165,7 +1175,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_unwellcol_any",
+    R=c("comb_unwellcol_any_s2", "comb_unwellcol_any_s3"),
     name="Any colleagues unwell due to COVID-19",
     full="Any colleagues unwell due to COVID-19",
     vartype="personal",
@@ -1174,7 +1184,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_unwellfam_max",
+    R=c("comb_unwellfam_max_s2", "comb_unwellfam_max_s3"),
     name = "Any family unwell due to COVID-19",
     #full=dictionary %>% filter(R=="comb_unwellfam_max_s2") %>% pull(full),
     vartype="personal",
@@ -1183,7 +1193,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_unwellcol_max",
+    R=c("comb_unwellcol_max_s2", "comb_unwellcol_max_s3"),
     name = "Any colleagues unwell due to COVID-19",
     full="",
     vartype="personal",
@@ -1192,7 +1202,7 @@ factor_dct <- factor_dct0 %>%
     short=NULL
   ) %>%
   add_row(
-    R="comb_covidpersonal",
+    R=c("comb_covidpersonal_s2", "comb_covidpersonal_s3"),
     name = "Personal COVID-19 diagnosis or hospital admission",
     full="",
     vartype="personal",
@@ -1200,42 +1210,23 @@ factor_dct <- factor_dct0 %>%
     #level=dictionary %>% filter(R=="age") %>% pull(level),
     short=NULL
   ) %>%
+
   add_row(
-    R="comb_dept2",
-    name = "Department",
-    full="Department",
-    plottype="bar",
-    vartype="professional",
-    code=NULL,
-    level=list(c("ED", "anaes", "ICU", "AMU", "anaes+ICU", "Other")),
-    short=NULL
-  ) %>%
-  add_row(
-    R="comb_dept3",
-    name = "Department",
-    full="Department",
-    plottype="bar",
-    vartype="professional",
-    code=NULL,
-    level=list(c("anaes", "anaes+ICU", "ED", "ED+anaes", "ICU", "ED+ICU", "ED+anaes+ICU")),
-    short=NULL
-  ) %>%
-  add_row(
-    R="ghqcase_s1",
+    R=c("ghqcase_s1", "ghqcase_s2","ghqcase_s3"),
     name = "GHQ12-0011 case identification",
     full="",
     plottype="bar",
     vartype="personal",
   ) %>%
   add_row(
-    R="redeployed_satisfaction_s1",
+    R=c("redeployed_satisfaction_s1", "redeployed_satisfaction_s2"),
     name="If you have been redeployed, how satisfied are you with this redeployment?",
     full="",
     plottype="bar",
     vartype="personal",
   ) %>%
   add_row(
-    R="missedshifts_s1",
+    R=c("missedshifts_s1", "missedshifts_s2", "missedshifts_s3"),
     name="How many clinical shifts in your rota have you missed due to self-isolation?",
     full="",
     plottype="bar",
