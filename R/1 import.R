@@ -550,6 +550,13 @@ data2 <- data1 %>%
     
     exposure_confirmed2_s1 = fct_collapse(exposure_confirmed_s1, ">25" = c("26-30","31-35","> 36")),
     
+    missedshifts2_s1 = case_when(
+      selfisolate_s1=="Yes" ~ as.character(missedshifts_s1),
+      selfisolate_s1=="No" ~ "No self-isolation",
+      is.na(selfisolate_s1) ~ NA_character_
+    ) %>% 
+      factor(levels = c("No self-isolation", factor_dct0$level[factor_dct0$R=="missedshifts_s1"][[1]])),
+    
     ghqsum0123_s1 = (select(., matches("(^ghq)\\_(.+)(\\_s1$)")) %>% mutate_all(as.integer) %>% rowSums()) - 12,
     ghqsum0011_s1 = (select(., matches("(^ghq)\\_(.+)(\\_s1$)")) %>% mutate_all(as.integer) %>%
                        mutate_all(.funs=~case_when(
@@ -691,6 +698,14 @@ data2 <- data1 %>%
     
     exposure_confirmed2_s2 = fct_collapse(exposure_confirmed_s2, ">25" = c("26-30","31-35","> 36")),
     
+    missedshifts2_s2 = case_when(
+      selfisolate_s2=="Yes" ~ as.character(missedshifts_s2),
+      selfisolate_s2=="No" ~ "No self-isolation",
+      is.na(selfisolate_s2) ~ NA_character_
+    ) %>% 
+      factor(levels = c("No self-isolation", factor_dct0$level[factor_dct0$R=="missedshifts_s2"][[1]])),
+    
+    
     ghqsum0123_s2 = (select(., matches("(^ghq)\\_(.+)(\\_s2$)")) %>% mutate_all(as.integer) %>% rowSums()) - 12,
     ghqsum0011_s2 = (select(., matches("(^ghq)\\_(.+)(\\_s2$)")) %>% mutate_all(as.integer) %>%
                        mutate_all(.funs=~case_when(
@@ -800,6 +815,12 @@ data2 <- data1 %>%
     
     exposure_confirmed2_s3 = fct_collapse(exposure_confirmed_s3, ">25" = c("26-30","31-35","> 36")),
     
+    missedshifts2_s3 = case_when(
+      selfisolate_s3=="Yes" ~ as.character(missedshifts_s3),
+      selfisolate_s3=="No" ~ "No self-isolation",
+      is.na(selfisolate_s3) ~ NA_character_
+    ) %>% 
+      factor(levels = c("No self-isolation", factor_dct0$level[factor_dct0$R=="missedshifts_s3"][[1]])),
     
     ghqsum0123_s3 = (select(., matches("(^ghq)\\_(.+)(\\_s3$)")) %>% mutate_all(as.integer) %>% rowSums()) - 12,
     ghqsum0011_s3 = (select(., matches("(^ghq)\\_(.+)(\\_s3$)")) %>% mutate_all(as.integer) %>%
@@ -987,7 +1008,7 @@ factor_dct <- factor_dct0 %>%
                  "Playing a useful part",
                  "Capable of making decisions",
                  "Constantly under strain",
-                 "Couldn't overcome your difficulties",
+                 "Couldn't overcome difficulties",
                  "Enjoying activities",
                  "Facing up to problems",
                  "Unhappy or depressed",
@@ -1033,14 +1054,14 @@ factor_dct <- factor_dct0 %>%
     level=list(c("none", "Instructional video", "Written instruction", "Simulation training", "Departmental guidance", "Other")),
     short=list(c("none", "vid", "written", "sim", "dept", "other"))
   ) %>%
-  # add_row(
-  #   R="ppeaspect",
-  #   name = "",
-  #   vartype="professional",
-  #   code=list(1:3),
-  #   level=list(c("donning and doffing", "fit testing for mask", "exposure to aerosol generating procedure")),
-  #   short=list(c("dondof", "fit", "exp"))
-  # ) %>%
+  add_row(
+    R="ppeaspect",
+    name = "",
+    vartype="professional",
+    code=list(1:3),
+    level=list(c("donning and doffing", "fit testing for mask", "exposure to aerosol generating procedure")),
+    short=list(c("dondof", "fit", "exp"))
+  ) %>%
   add_row(
     R="practicaled",
     name = "Practical education for COVID-19 care",
@@ -1101,6 +1122,12 @@ factor_dct <- factor_dct0 %>%
       "symptomspersonal", "diagnosispersonal", "symptomshousehold", 
       "diagnosiswork", "diagnosisplay", "other")
     )
+  ) %>%
+  add_row(
+    R=c("missedshifts2_s1", "missedshifts2_s2", "missedshifts2_s3"),
+    name="How many clinical shifts in your rota have you missed due to self-isolation",
+    full="",
+    vartype="professional",
   ) %>%
   add_row(
     R=c("redeployed_where2_s1", "redeployed_where2_s2"),
@@ -1224,14 +1251,7 @@ factor_dct <- factor_dct0 %>%
     full="",
     plottype="bar",
     vartype="personal",
-  ) %>%
-  add_row(
-    R=c("missedshifts_s1", "missedshifts_s2", "missedshifts_s3"),
-    name="How many clinical shifts in your rota have you missed due to self-isolation?",
-    full="",
-    plottype="bar",
-    vartype="personal",
-  ) 
+  )
 
 write_rds(factor_dct, here::here("processed-data", "factor_dictionary.rds"))
 
