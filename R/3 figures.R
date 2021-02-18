@@ -834,12 +834,14 @@ write_rds(plotdf %>% select(var, name, data, ywrapwidth, plot, alignedplot, heig
 write_rds(plotdf_facethistghq %>% select(var, name, data, ywrapwidth, plot, alignedplot, height, tabtype), file=here::here("outputs", "figures", "survey-1", "plotdf_ghq.rds"))
 
 
-Qdata_grade_seniority <- 
+data_grade_seniority <- 
 bind_rows(
   data_s1 %>% filter(dept_anaes) %>% mutate(table_dept="Anaesthetics"),
   data_s1 %>% filter(dept_ed) %>% mutate(table_dept="Emergency Medicine"),
   data_s1 %>% filter(dept_icu) %>% mutate(table_dept="Intensive Care"),
-) %>%
+)
+
+Qdata_grade_seniority <- data_grade_seniority %>%
   group_by(seniority, table_dept) %>%
   summarise(
     n=n(),
@@ -859,22 +861,24 @@ bind_rows(
   ungroup() 
 
 
-ggplot(data_s1) +
+plot_grade_seniority <- ggplot(data_grade_seniority) +
   geom_histogram(aes(x=ghqsum0123_s1), colour="black", fill="darkgrey", size=1, binwidth=1, boundary = 0.5, closed = "left")+
-  geom_point(data=Qdata_grade_seniority, aes(y=-50/3, x=median), colour='red', size=1, alpha=0.5)+
-  geom_linerange(data=Qdata_grade_seniority, aes(y=-50/3, xmin=Q25, xmax=Q75), colour='red', size=1, alpha=0.5)+
-  geom_linerange(data=Qdata_grade_seniority, aes(y=-50/3, xmin=Q10, xmax=Q90), colour='red', size=0.5, alpha=0.5)+
+  geom_point(data=Qdata_grade_seniority, aes(y=-25/3, x=median), colour='red', size=1, alpha=0.5)+
+  geom_linerange(data=Qdata_grade_seniority, aes(y=-25/3, xmin=Q25, xmax=Q75), colour='red', size=1, alpha=0.5)+
+  geom_linerange(data=Qdata_grade_seniority, aes(y=-25/3, xmin=Q10, xmax=Q90), colour='red', size=0.5, alpha=0.5)+
   geom_hline(aes(yintercept=0))+
-  facet_grid(cols=vars(seniority), rows=vars(table_dept))+#, space='free_y', scales="free_y")+
-  scale_y_continuous(breaks = seq(0,5000, 50), limits = c(-(50/1.8), NA))+
+  facet_grid(cols=vars(seniority), rows=vars(table_dept), space='free_y', scales="free_y")+
+  scale_y_continuous(breaks = seq(0,5000, 25), limits = c(-(25/2), NA))+
   labs(
     title=str_wrap("GHQ by Seniority and Department", titlewrapwidth),
-    x="GHQ-12 (0-1-2-3)", y=NULL)+
+    x="GHQ-12 (0-1-2-3)", y=NULL,
+    caption = "Participants working across multiple departments are including in each band"
+  )+
   theme_bw(base_size = theme.size) + 
   theme(
     panel.border = element_blank(), #axis.line.x = element_line(colour = "black"),
     panel.grid = element_blank(),
-    panel.grid.major.y = element_blank(),
+    panel.grid.major.y = element_line(colour="lightgrey"),
     panel.grid.major.x = element_line(colour="lightgrey"),
     strip.background = element_blank(),
     
@@ -888,7 +892,9 @@ ggplot(data_s1) +
   NULL
   
 write_csv(Qdata_grade_seniority, "table.csv")
-
+ggsave(filename=here::here("outputs", "figures", "survey-1", "grade_seniority.png"), plot = plot_grade_seniority, 
+       units="cm", height=20, width=25,
+       scale=0.8)
   
 ##################################################################################
 # 
