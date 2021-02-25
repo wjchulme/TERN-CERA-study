@@ -509,7 +509,7 @@ plotinfo_stack <-
         mutate(
           guidetype = factor(guidetype, levels=temp_levels, labels=temp_labels)
         ) %>%
-        filter(!is.na(response)) %>%
+        #filter(!is.na(response)) %>%
         group_by(guidetype) %>%
         count(response) %>%
         mutate(
@@ -523,7 +523,7 @@ plotinfo_stack <-
     
         ggplot(data)+
         geom_bar(aes(x=percent, y=fct_rev(guidetype), fill=response), stat="identity", position=position_stack(reverse = TRUE))+
-        scale_fill_viridis(discrete = TRUE)+
+        scale_fill_viridis(discrete = TRUE, na.value="grey")+
         #geom_text(aes(y=fct_rev(guidetype), x=labelpos, label=pct(percent)))+
         guides(fill=guide_legend(ncol=3))+
         labs(title=str_wrap(name, titlewrapwidth),
@@ -803,9 +803,11 @@ plotdf_facethistghq <- plotinfo_facethistghq %>%
 plotdf <- map_dfr(list(plotdf_bar, plotdf_stack, plotdf_hist), ~.)
 
 
+plotdf <- map_dfr(list(plotdf_stack), ~.)
+
 tempsave <- 
-  rbind(plotdf %>% select(filename, alignedplot, width, height, units), 
-        plotdf_facethistghq %>% select(filename, alignedplot, width, height, units)
+  rbind(plotdf %>% select(filename, alignedplot, width, height, units)#, 
+        #plotdf_facethistghq %>% select(filename, alignedplot, width, height, units)
         ) %>%
   mutate(
     w = pmap(list(filename=filename, plot=alignedplot,
