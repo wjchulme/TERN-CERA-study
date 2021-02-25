@@ -106,3 +106,13 @@ write_rds(x = data_longany, file = here::here("processed-data", "data_longany.rd
 write_rds(x = data_long123, file = here::here("processed-data", "data_long123.rds"))
 write_rds(x = data_long123_ghq, file = here::here("processed-data", "data_long123_ghq.rds"))
 write_rds(x = data_long123_iesr, file = here::here("processed-data", "data_long123_iesr.rds"))
+
+write_csv(x = data_distinctemails, file = here::here("processed-data", "data_distinctemails.csv"))
+write_csv(x = data_s1, file = here::here("processed-data", "data_s1.csv"))
+write_csv(x = data_s123, file = here::here("processed-data", "data_s123.csv"))
+write_csv(x = data_sany, file = here::here("processed-data", "data_sany.csv"))
+write_csv(x = data_longany, file = here::here("processed-data", "data_longany.csv"))
+write_csv(x = data_long123, file = here::here("processed-data", "data_long123.csv"))
+write_csv(x = data_long123_ghq, file = here::here("processed-data", "data_long123_ghq.csv"))
+write_csv(x = data_long123_iesr, file = here::here("processed-data", "data_long123_iesr.csv"))
+
